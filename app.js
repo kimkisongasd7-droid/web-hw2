@@ -92,7 +92,7 @@ const filterByRating = (list, min) => {
 
 //배열, 키 이름, 참이면 내림차순 ⇒ 새 배열 
 function sortBy(list, key, desc) {
-    [...list].sort((a, b) => {
+    return [...list].sort((a, b) => {
         let result = 0;
         if (typeof a[key] === "string") {
             result = a[key].localeCompare(b[key]);
@@ -132,6 +132,7 @@ document.getElementById("out").textContent =
   `전체 10편, 평균 평점 ${average(movies).toFixed(1)}점\n` +
   `최고 평점 ${bestMovie.title} (${bestMovie.rating}점, 개봉한 지 ${yearsSince(bestMovie.date)}년)\n` +
   `관객 1위 ${sortBy(movies, "audience", true)[0].title} (누적 ${formatNumber(sortBy(movies, "audience", true)[0].audience)}명)`;
+
 
 
 
