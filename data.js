@@ -25,7 +25,7 @@ const movies = [
 
     {
         title: "미션 임파서블", year: 1996, date: "1996-05-22", rating: 7.0,
-        audience: 0, poster: "/abc123.jpg", type: "mine", rank: null
+        audience: 0, poster: "/6vDaYhZypJzd8r0NnSY2JPIX6Y5.jpg", type: "mine", rank: null
     },
     {
         title: "암살자(들)", year: 2026, date: "2026-09-23", rating: 7.2,
